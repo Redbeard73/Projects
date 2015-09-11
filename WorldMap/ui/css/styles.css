@@ -1,0 +1,32 @@
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#map_canvas { height: 100% }
+#content {
+
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#info {
+	width: 250px;
+	height: 60px;
+	background-color: #FBFBFB;
+	border: 2px outset #333;
+	color: #F00;
+	float:left;
+	padding: 2px;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 85px;
+}
+#navi {
+	height: 60px;
+	background-color: #CCC;
+	color: #000;
+	float:right;
+	border: 2px outset #333;
+	margin: 10px;
+	padding: 2px;
+}

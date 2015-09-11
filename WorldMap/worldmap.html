@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>World Map</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="ui/css/styles.css"/>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVyAC9FYrCmIKB5zX17gQOoAYKIpmuK34&sensor=false"></script>
+		<script type="text/javascript" src="ui/js/maps.google.polygon.containsLatLng.js"></script>
+		<script type="text/javascript" src="ui/js/google.maps.Polygon.prototype.getBounds.js"></script>
+		<script type="text/javascript" src="ui/js/google.maps.Polygon.prototype.country.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="ui/js/common.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var map,layer,mapCenter,currIndex,clickIndex,qData,x1 = 0;var y1 = 0;var x2 = 0;var y2 = 0; 
+			var polyArray=[];
+			var tblCountry = '1uL8KJV0bMb7A8-SkrIe0ko2DMtSypHX52DatEE4';
+			var startPos = new google.maps.LatLng(37.996163,-39.023438);
+			var startZoom = 3;
+			
+			//map styles
+			var mStyleBasic = [{ polygonOptions: { fillColor: '#FFFFFF', fillOpacity: .10 } }];
+			var mOver = {strokeColor: "#0000FF", fillColor: "#0000FF", strokeOpacity: .2,fillOpacity: .1 };
+			var mOut = {strokeColor: "#0000FF", fillColor: "#0000FF", strokeOpacity: 0, fillOpacity: 0 };
+			var mCenter = { strokeColor: "#FF0000", fillColor: "#FF0000", strokeOpacity: .2, fillOpacity: .1 };
+			var mClick = { strokeColor: "#060", fillColor: "#060", strokeOpacity: .2, fillOpacity: .1 };
+			var mBase = { strokeColor: "#0000FF", fillColor: "#0000FF", strokeOpacity: 0, fillOpacity: 0 };
+		
+			function initialize(){				
+				$('#dNameCurrent').html('Loading Data...');
+				//Create Fusion Map Layer
+				var mapOptions = {
+					center: startPos,
+					zoom: startZoom,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);				
+				layer = new google.maps.FusionTablesLayer({
+					query: {
+						select: 'geometry',
+						from: tblCountry
+					},
+					options: { suppressInfoWindows: true },
+					styles: mStyleBasic,
+					map: map
+				});
+				//listener to clear "data loading" message
+				google.maps.event.addListenerOnce(map, 'idle', function(){
+					$('#dNameCurrent').html('&nbsp;');
+				});				
+				//listener to not allow zoom less than 3
+				google.maps.event.addListener(map, 'zoom_changed', function(){
+					if(map.getZoom() < startZoom) map.setZoom(startZoom);					
+				});	
+				//create script object to query fusion table
+				var script = document.createElement('script');
+				var url = ['https://www.googleapis.com/fusiontables/v1/query?'];
+				url.push('sql=');
+				var encodedQuery = encodeURIComponent(qry());
+				url.push(encodedQuery);
+				url.push('&callback=drawPoly');
+				url.push('&key=AIzaSyCVyAC9FYrCmIKB5zX17gQOoAYKIpmuK34');
+				script.src = url.join('');
+				var body = document.getElementsByTagName('body')[0];
+				body.appendChild(script);
+			}
+			
+			function qry(){
+				var sql = "SELECT geometry, Name, ISO_2DIGIT FROM " + tblCountry + " ORDER BY Name";
+				return sql;
+			}
+			
+			drawPoly = function(data) {
+				qData = data['rows'];
+				//loop through data
+				for (var i in qData) {
+					var Name = qData[i][1];
+					var ISO_2DIGIT = qData[i][2];					
+					var newCoordinates = [];
+					//get geometries from KML in fusion table
+					var geometries = qData[i][0]['geometries'];
+					if (geometries)
+						for (var j in geometries)
+							newCoordinates.push(constructNewCoordinates(geometries[j]));
+					else 
+						newCoordinates = constructNewCoordinates(qData[i][0]['geometry']);						
+					//create polygon
+					var poly = new google.maps.Polygon({paths: newCoordinates});
+					var bounds = poly.getBounds();
+						poly.setOptions(mBase);		
+						poly.setMap(map);
+						poly.setName(Name);
+						poly.setIso(ISO_2DIGIT);
+						poly.setCenter(bounds.getCenter());
+						
+						
+					console.log(poly);
+					addlisteners(poly,i);			
+					//add values to arrays
+					polyArray.push(poly);		
+					//populate select box
+					$('#selCountry')
+						.append($("<option></option>")
+						.attr("value",i)
+						.text(Name)); 					
+				}
+				//listener to create map drag functionaloty
+				google.maps.event.addListener(map, "bounds_changed", mapSettleTime);
+			}			
+			
+			//let map be idle before updating senter country
+			var mapupdater;
+			function mapSettleTime() {
+  			   clearTimeout(mapupdater);
+			   mapupdater=setTimeout(HighlightCenterCountry,500);
+ 			}
+			
+			function HighlightCenterCountry(){
+				currIndex = -1;
+				$('#dNameCurrent').html('&nbsp;');
+				for (i=0;i<polyArray.length;i++){
+					if(polyArray[i].containsLatLng(map.getCenter())){
+						polyArray[i].setOptions(mCenter);
+						$('#dNameCurrent').html(qData[i][1]);
+						currIndex = i;
+						polyArray[i].setCurrent = true;
+					} else {
+						if(clickIndex != i)
+							polyArray[i].setOptions(mBase);
+						polyArray[i].setCurrent = false;
+					}						
+				}
+				$('#selCountry').val(currIndex)
+			}
+			
+			function addlisteners(polygon,i){	
+				google.maps.event.addListener(polygon, 'mouseover', function(e) {
+					if(currIndex != i && clickIndex != i) 
+						this.setOptions(mOver);
+					$('#dNameOver').html(qData[i][1]);
+				});
+				google.maps.event.addListener(polygon, 'mouseout', function(e) {
+					if(currIndex != i && clickIndex != i) 
+						this.setOptions(mOut);
+					$('#dNameOver').html('&nbsp;');
+				});
+				google.maps.event.addListener(polygon, 'click', function(e) {
+					polygon.setClick = true;
+					for (j=0;j<polyArray.length;j++)
+						if(j!=i && currIndex != j) polyArray[j].setOptions(mOut);
+					$('#dNameClick').html(qData[i][1]);
+					if(currIndex != i) polygon.setOptions(mClick);
+					clickIndex = i;
+				});
+			}
+						
+			google.maps.event.addDomListener(window, 'load', initialize);
+			
+			$('#btnGo').click(function() {					
+				if($('#selCountry').val() == -1)
+				{
+					map.panTo(startPos);
+					map.setZoom(startZoom);
+				} else {
+					map.panTo(polyArray[$('#selCountry').val()].center);
+					var bounds = polyArray[$('#selCountry').val()].getBounds();
+					if($('#chkAutoZoom').prop('checked') == true)
+						map.fitBounds(new google.maps.LatLngBounds(bounds.getSouthWest(), bounds.getNorthEast()));
+				}
+			});
+			
+			$('#btnReset').click(function(){
+				map.panTo(startPos);
+				map.setZoom(startZoom);
+			});
+			$('#btnReload').click(function(){
+				window.location='worldmap.html';
+			});
+			
+		});
+			
+		</script>
+	
+	
+	</head>
+	<body>
+		<div id="map_canvas" style="width:100%; height:100%"></div>
+		<div id="content">
+			<div id="info">
+				<div id="dNameCurrent" style="color:#FF0000;">&nbsp;</div>
+				<div id="dNameClick" style="color:#060;">&nbsp;</div>
+				<div id="dNameOver" style="color:#0000FF;">&nbsp;</div>
+			</div>
+			<div id="navi">
+				<div>
+                	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+                    	<tr>
+                        	<td>Country:</td>
+                        	<td colspan="2"><select id="selCountry" style="width:300px;"><option value="-1" selected="selected"></option></select></td>
+                        	<td><input name="btnGo" type="button" id="btnGo" value="Go" /></td>
+                        </tr>
+                    	<tr>
+                        	<td></td>
+                        	<td><input name="chkAutoZoom" type="checkbox" id="chkAutoZoom" value="1" checked="checked" />Auto Zoom</td>
+                        	<td align="right"><input name="btnReset" type="button" id="btnReset" value="Reset" /><input name="btnReload" type="button" id="btnReload" value="Reload" /></td>
+                            <td></td>
+                        </tr>
+                    </table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

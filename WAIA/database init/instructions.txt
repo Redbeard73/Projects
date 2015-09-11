@@ -1,0 +1,12 @@
+Chris,
+
+I have attached updated database scripts. Run in the following order:
+
+01_waia_ddl_script_v1.5 - creates database schema
+02_waia_reference_data_dml_v1.4 - creates reference data for system access and contact roles
+03_waia_meetings dml_v1.4 - creates all meeting data (meeting tag types, meetings & meeting tags)
+waia_select_meetings_with_all_tags_v1.1 - query to pull back meetings with all tags in single row
+Script 3 includes every meeting for both DC and MD so should give you more than enough to test with. We are still working on updating the contact information which will be more important for the backend piece of the website. I'll get you that contact info when we have it ready. Let me know if you have any questions.
+
+Thanks,
+Jason
