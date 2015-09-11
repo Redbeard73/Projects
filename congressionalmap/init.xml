@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<apiKey variable="AIzaSyCXS3fBQaP7uEpN-xe0jfE9uazO_CHePTg" />
+	<clientId variable="gme-exportimportbank" />
+	<datasource variable="eximmap" />
+	<us_center variable="40.044438,-99.140625" />
+	<fusionTables>		
+		<fusionTable 
+			name="State Polygon Information" 
+			variable="fusStates" 
+			key="1Z10_hMgyFE4OXbJ5_goGU6tqqTs9GraVsT0QL7E" />		
+		<fusionTable 
+			name="District Polygon Data" 
+			variable="fusDistricts" 
+			key="1j-sHP361AstIjtWf8TWW06KvPDYZRwTV-9EWr1E" />			
+		<fusionTable 
+			name="State Exporter Data By Year" 
+			variable="fusStateExporterDataMain" 
+			key="1_dMMowCQvOHWjOSXQaqAx_yUE5m7NCl-vsI8D1Q" />			
+		<fusionTable 
+			name="State Exporter Data - Homepage View" 
+			variable="fusStateExporterData" 
+			key="1O6Hhd1m4lRPSdAgievkjD0cIESo7LPVlktXc-rM" />			
+		<fusionTable 
+			name="State District Data - Initial View" 
+			variable="fusStateExporterDataInit" 
+			key="1vQdA-4liW1BqnM8tDA4RXN0CKYJj8AdnqmzOPg0" />				
+		<fusionTable 
+			name="District Exporter Data by Year" 
+			variable="fusSDistrictExporterDataMain" 
+			key="13N4zANBoKvgKjBn9kQ4gj7zMMVRlDM-NPqCCTMM" />
+			
+		<fusionTable 
+			name="Merge of State District Data - Initial View and District Polygon Data (2)" 
+			variable="fusStateExporterDataInitPoly" 
+			key="1knSQXGNr0DKgZmMY6Wxfyr9trYRl8fNFREwYQKg" />		
+		<fusionTable 
+			name="Merge of State Exporter Data - Homepage View and State Polygon Information" 
+			variable="fusStateExporterDataPoly" 
+			key="1PZnKDNRYWeSdkjREno9y7-dPd44QknzonFy5vxw" />						
+		<fusionTable 
+			name="Merge of State Exporter Data By Year and State Polygon Information" 
+			variable="fusUSMap" 
+			key="1vzAuYX9DEir7ruq24bKp1a-eJYY5AOECWnFPWfo" />			
+		<fusionTable 
+			name="Merge of District Exporter Data by Year and District Polygon Data (2)" 
+			variable="fusStateMap" 
+			key="12XK7b48s8I3Eu3M7XnCA1hurIxKtHLFjwztS9js" />
+			
+					
+		<fusionTable 
+			name="us_map" 
+			variable="fusus_map" 
+			key="1YP42sgYnaii7fPXNiBsTCn7rVl6Eb7LIRmXhpDc" />
+		<fusionTable 
+			name="Merge of us_map and State Polygon Information" 
+			variable="fusus_map_merge" 
+			key="1mocvrH4iBN_hjeDE4DblIQ5LZ3MQEVdcnaa-ijQ" />
+			
+			
+			
+	</fusionTables>
+</settings>	

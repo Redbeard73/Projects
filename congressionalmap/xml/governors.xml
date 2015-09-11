@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<governors>
+
+	<state id="AL" 
+		   name="Alabama" 
+		   governor="Robert Bentley" 
+		   govweburl="http://www.governor.alabama.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/AL-BENTLEY.JPG"
+		   dateofbirth="02/03/1943"
+		   party="Republican">
+	</state>
+
+	<state id="AK" 
+		   name="Alaska" 
+		   governor="Sean Parnell" 
+		   govweburl="http://gov.alaska.gov/parnell/governors-office.html"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/AK-PARNELL.JPG"
+		   dateofbirth="01/19/1962"
+		   party="Republican">
+	</state>
+
+	<state id="AS" 
+		   name="American Samoa" 
+		   governor="Togiola T. A. Tulafono" 
+		   govweburl="http://americansamoa.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/GOVTULAFONO.jpg"
+		   dateofbirth="02/28/1947"
+		   party="Democrat">
+	</state>
+
+	<state id="AZ" 
+		   name="Arizona" 
+		   governor="Jan Brewer" 
+		   govweburl="http://az.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/AZ-Brewer.jpg"
+		   dateofbirth="09/26/1944"
+		   party="Republican">
+	</state>
+
+	<state id="AR" 
+		   name="Arkansas" 
+		   governor="Mike Beebe" 
+		   govweburl="http://governor.arkansas.gov/Pages/default.aspx"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/AR-Beebe.jpg"
+		   dateofbirth="12/28/1946"
+		   party="Democrat">
+	</state>
+
+	<state id="CA" 
+		   name="California" 
+		   governor="Edmund Gerald Brown Jr." 
+		   govweburl="http://gov.ca.gov/home.php"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/CA-BROWN.JPG"
+		   dateofbirth="04/07/1938"
+		   party="Democrat">
+	</state>
+
+	<state id="CO" 
+		   name="Colorado" 
+		   governor="John Hickenlooper" 
+		   govweburl="http://www.colorado.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/CO-HICKENLOOPER.JPG"
+		   dateofbirth="02/07/1952"
+		   party="Democrat">
+	</state>
+
+	<state id="CT" 
+		   name="Connecticut" 
+		   governor="Dan Malloy" 
+		   govweburl="http://www.governor.ct.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/CT-MALLOY.JPG"
+		   dateofbirth="07/21/1955"
+		   party="Democrat">
+	</state>
+
+	<state id="DE" 
+		   name="Delaware" 
+		   governor="Jack Markell" 
+		   govweburl="http://governor.delaware.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/DE-Markell.jpg"
+		   dateofbirth="11/26/1960"
+		   party="Democrat">
+	</state>
+
+	<state id="FL" 
+		   name="Florida" 
+		   governor="Rick Scott" 
+		   govweburl="http://www.flgov.com/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/FL-SCOTT.JPG"
+		   dateofbirth="12/01/1952"
+		   party="Republican">
+	</state>
+
+	<state id="GA" 
+		   name="Georgia" 
+		   governor="Nathan Deal" 
+		   govweburl="http://gov.georgia.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/GA-DEAL.JPG"
+		   dateofbirth="08/25/1942"
+		   party="Republican">
+	</state>
+
+	<state id="GU" 
+		   name="Guam" 
+		   governor="Eddie Baza Calvo" 
+		   govweburl="http://governor.guam.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/GU-CALVO.JPG"
+		   dateofbirth="08/29/1961"
+		   party="Republican">
+	</state>
+
+	<state id="HI" 
+		   name="Hawaii" 
+		   governor="Neil Abercrombie" 
+		   govweburl="http://governor.hawaii.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/HI-ABERCROMBIE.JPG"
+		   dateofbirth="06/26/1938"
+		   party="Democrat">
+	</state>
+
+	<state id="ID" 
+		   name="Idaho" 
+		   governor="C.L. Butch Otter" 
+		   govweburl="http://gov.idaho.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/ID-Otter.jpg"
+		   dateofbirth="05/03/1942"
+		   party="Republican">
+	</state>
+
+	<state id="IL" 
+		   name="Illinois" 
+		   governor="Pat Quinn" 
+		   govweburl="http://www.illinois.gov/gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/IL-Quinn.jpg"
+		   dateofbirth="12/16/1948"
+		   party="Democrat">
+	</state>
+
+	<state id="IN" 
+		   name="Indiana" 
+		   governor="Mitch Daniels" 
+		   govweburl="http://www.in.gov/gov/index.htm"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MDANIELS.jpg"
+		   dateofbirth="04/07/1949"
+		   party="Republican">
+	</state>
+
+	<state id="IA" 
+		   name="Iowa" 
+		   governor="Terry E. Branstad" 
+		   govweburl="https://governor.iowa.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/IA-BRANSTAD.JPG"
+		   dateofbirth="11/17/1946"
+		   party="Republican">
+	</state>
+
+	<state id="KS" 
+		   name="Kansas" 
+		   governor="Sam Brownback" 
+		   govweburl="http://www.governor.ks.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/KS-BROWNBACK.JPG"
+		   dateofbirth="09/12/1956"
+		   party="Republican">
+	</state>
+
+	<state id="KY" 
+		   name="Kentucky" 
+		   governor="Steven L. Beshear" 
+		   govweburl="http://governor.ky.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/KY-Beshear-Steve.jpg"
+		   dateofbirth="09/21/1944"
+		   party="Democrat">
+	</state>
+
+	<state id="LA" 
+		   name="Louisiana" 
+		   governor="Bobby Jindal" 
+		   govweburl="http://www.gov.state.la.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/LA-Jindal-Bobby.jpg"
+		   dateofbirth="06/10/1971"
+		   party="Republican">
+	</state>
+
+	<state id="ME" 
+		   name="Maine" 
+		   governor="Paul LePage" 
+		   govweburl="http://www.maine.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/ME-LEPAGE.JPG"
+		   dateofbirth="10/09/1948"
+		   party="Republican">
+	</state>
+
+	<state id="MD" 
+		   name="Maryland" 
+		   governor="Martin O'Malley" 
+		   govweburl="http://www.gov.state.md.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MD-Omalley.jpg"
+		   dateofbirth="01/18/1963"
+		   party="Democrat">
+	</state>
+
+	<state id="MA" 
+		   name="Massachusetts" 
+		   governor="Deval Patrick" 
+		   govweburl="http://www.mass.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MA-Patrick.jpg"
+		   dateofbirth="07/31/1956"
+		   party="Democrat">
+	</state>
+
+	<state id="MI" 
+		   name="Michigan" 
+		   governor="Rick Snyder" 
+		   govweburl="http://www.michigan.gov/snyder"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MI-SNYDER.JPG"
+		   dateofbirth="08/19/1958"
+		   party="Republican"/>
+
+	<state id="MN" 
+		   name="Minnesota" 
+		   governor="Mark Dayton" 
+		   govweburl="http://www.governor.state.mn.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MN-DAYTON.JPG"
+		   dateofbirth="01/26/1947"
+		   party="Democrat"/>
+
+	<state id="MS" 
+		   name="Mississippi" 
+		   governor="Phil Bryant" 
+		   govweburl="http://www.governorbryant.com/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MS-BRYANT.JPG"
+		   dateofbirth="12/09/1954"
+		   party="Republican"/>
+
+	<state id="MO" 
+		   name="Missouri" 
+		   governor="Jeremiah W. Nixon" 
+		   govweburl="http://governor.mo.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MO-Nixon.jpg"
+		   dateofbirth="02/13/1956"
+		   party="Democrat"/>
+
+	<state id="MT" 
+		   name="Montana" 
+		   governor="Brian Schweitzer" 
+		   govweburl="http://governor.mt.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/Schweitzer.jpg"
+		   dateofbirth="09/04/1955"
+		   party="Democrat"/>
+
+	<state id="NE" 
+		   name="Nebraska" 
+		   governor="Dave Heineman" 
+		   govweburl="http://www.governor.nebraska.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NEDHEINEMAN.jpg"
+		   dateofbirth="05/12/1948"
+		   party="Republican"/>
+
+	<state id="NV" 
+		   name="Nevada" 
+		   governor="Brian Sandoval" 
+		   govweburl="http://www.governor.nh.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NV-SANDOVAL.JPG"
+		   dateofbirth="08/05/1963"
+		   party="Republican"/>
+
+	<state id="NH" 
+		   name="New Hampshire" 
+		   governor="John Lynch" 
+		   govweburl="http://gov.nv.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/JLYNCHNH.jpg"
+		   dateofbirth="11/25/1952"
+		   party="Democrat"/>
+
+	<state id="NJ" 
+		   name="New Jersey" 
+		   governor="Christopher Christie" 
+		   govweburl="http://www.state.nj.us/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NJ-CHRISTIE.jpg"
+		   dateofbirth="09/06/1962"
+		   party="Republican"/>
+
+	<state id="NM" 
+		   name="New Mexico" 
+		   governor="Susana Martinez" 
+		   govweburl="http://www.governor.state.nm.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NM-MARTINEZ.JPG"
+		   dateofbirth="07/14/1959"
+		   party="Republican"/>
+
+	<state id="NY" 
+		   name="New York" 
+		   governor="Andrew Cuomo" 
+		   govweburl="http://www.governor.ny.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NY-CUOMO.JPG"
+		   dateofbirth="12/06/1957"
+		   party="Democrat"/>
+
+	<state id="NC" 
+		   name="North Carolina" 
+		   governor="Bev Perdue" 
+		   govweburl="http://www.governor.state.nc.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/NC-Perdue.jpg"
+		   dateofbirth="01/14/1947"
+		   party="Democrat"/>
+
+	<state id="ND" 
+		   name="North Dakota" 
+		   governor="Jack Dalrymple" 
+		   govweburl="http://governor.nd.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/ND-DALRYMPLE.JPG"
+		   dateofbirth="10/16/1948"
+		   party="Republican"/>
+
+	<state id="MP" 
+		   name="Northern Mariana Islands" 
+		   governor="Benígno Fitial" 
+		   govweburl="http://www.gov.mp/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/MP-Fitial.jpg"
+		   dateofbirth="11/27/1945"
+		   party="Republican"/>
+
+	<state id="OH" 
+		   name="Ohio" 
+		   governor="John Kasich" 
+		   govweburl="http://governor.ohio.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/OH-KASICH.JPG"
+		   dateofbirth="05/13/1952"
+		   party="Republican"/>
+
+	<state id="OK" 
+		   name="Oklahoma" 
+		   governor="Mary Fallin" 
+		   govweburl="http://www.ok.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/OK-FALLIN.JPG"
+		   dateofbirth="12/09/1954"
+		   party="Republican"/>
+
+	<state id="OR" 
+		   name="Oregon" 
+		   governor="John A. Kitzhaber" 
+		   govweburl="http://governor.oregon.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/OR-KITZHABER.JPG"
+		   dateofbirth="03/05/1947"
+		   party="Democrat"/>
+
+	<state id="PA" 
+		   name="Pennsylvania" 
+		   governor="Tom Corbett" 
+		   govweburl="http://www.governor.state.pa.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/PA-CORBETT.JPG"
+		   dateofbirth="06/17/1949"
+		   party="Republican"/>
+
+	<state id="PR" 
+		   name="Puerto Rico" 
+		   governor="Luis G. Fortuño" 
+		   govweburl="http://www.prfaa.com/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/PR-FORTUNO.JPG"
+		   dateofbirth="10/31/1960"
+		   party="Republican"/>
+
+	<state id="RI" 
+		   name="Rhode Island" 
+		   governor="Lincoln Chafee" 
+		   govweburl="http://www.governor.state.ri.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/RI-CHAFEE.JPG"
+		   dateofbirth="03/26/1953"
+		   party="Independent"/>
+
+	<state id="SC" 
+		   name="South Carolina" 
+		   governor="Nikki R. Haley" 
+		   govweburl="http://governor.sc.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/SC-HALEY.JPG"
+		   dateofbirth="01/20/1972"
+		   party="Republican">
+	</state>
+	
+	<state id="SD" 
+		   name="South Dakota" 
+		   governor="Dennis Daugaard" 
+		   govweburl="http://sd.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/SD-DAUGAARD.JPG"
+		   dateofbirth="06/11/1953"
+		   party="Republican">
+	</state>
+
+	<state id="TN" 
+		   name="Tennessee" 
+		   governor="Bill Haslam" 
+		   govweburl="http://www.state.tn.us/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/TN-HASLAM.JPG"
+		   dateofbirth="08/23/1958"
+		   party="Republican">
+	</state>
+	
+	<state id="TX" 
+		   name="Texas" 
+		   governor="Rick Perry" 
+		   govweburl="http://www.governor.state.tx.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/GOVRICKPERRY.jpg"
+		   dateofbirth="03/04/1950"
+		   party="Republican">
+	</state>
+
+	<state id="UT" 
+		   name="Utah" 
+		   governor="Gary Richard Herbert" 
+		   govweburl="http://www.utah.gov/governor/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/UT-HERBERT.JPG"
+		   dateofbirth="05/07/1947"
+		   party="Republican">
+	</state>
+
+	<state id="VT" 
+		   name="Vermont" 
+		   governor="Peter Shumlin" 
+		   govweburl="http://governor.vermont.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/VT-SHUMLIN.JPG"
+		   dateofbirth="03/24/1956"
+		   party="Democrat">
+	</state>
+
+	<state id="VI" 
+		   name="Virgin Islands" 
+		   governor="John deJongh, Jr." 
+		   govweburl="http://www.governordejongh.com/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/VI-Dejongh.jpg"
+		   dateofbirth="11/03/1957"
+		   party="Democrat">
+	</state>
+
+	<state id="VA" 
+		   name="Virginia" 
+		   governor="Robert McDonnell" 
+		   govweburl="http://www.governor.virginia.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/VA-MCDONNELL.jpg"
+		   dateofbirth="06/15/1954"
+		   party="Republican">
+	</state>
+
+	<state id="WA" 
+		   name="Washington" 
+		   governor="Chris Gregoire" 
+		   govweburl="http://www.governor.wa.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/GREGOIRE.jpg"
+		   dateofbirth="03/24/1947"
+		   party="Democrat">
+	</state>
+
+	<state id="WV" 
+		   name="West Virginia" 
+		   governor="Earl Ray Tomblin" 
+		   govweburl="http://www.governor.wv.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/WV-TOMBLIN.JPG"
+		   dateofbirth="03/15/1952"
+		   party="Democrat">
+	</state>
+	
+	<state id="WI" 
+		   name="Wisconsin" 
+		   governor="Scott Walker" 
+		   govweburl="http://www.wisgov.state.wi.us/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/WI-WALKER.JPG"
+		   dateofbirth="11/02/1967"
+		   party="Republican">
+	</state>
+
+	<state id="WY" 
+		   name="Wyoming" 
+		   governor="Matthew Mead" 
+		   govweburl="http://governor.wy.gov/"
+		   govimageurl="http://www.nga.org/files/live/sites/NGA/files/images/Govimages/WY-MEAD.JPG"
+		   dateofbirth="03/11/1962"
+		   party="Republican">
+	</state>
+
+	
+</governors>

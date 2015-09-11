@@ -1,0 +1,232 @@
+/* PODS mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+body {padding-left:6px}
+
+.podblue:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.podblue {
+  display: inline-block;
+}
+html[xmlns] .podblue {
+  display: block;
+}
+* html .podblue {
+  height: 1%;
+}
+
+
+
+
+/* TEXT FLAG --------------------------- */
+
+
+.box2wrap .mainmodule .textflag .wrap2 p {
+  display: block;
+  width: 94%;
+  clear: both;
+}
+.textflag .flag {
+  margin-top: 15px;
+  margin-left: -7px;
+  background: #09375d url("../images/trimask.png") right center no-repeat;
+}
+.textflag .tri {
+  display: block;
+  float: left;
+  clear: left;
+  height: 7px;
+  width: 7px;
+  margin-left: -8px;
+  font-size: 0px;
+  line-height: 0%;
+  width: 0px;
+  border-top: 7px solid #111;
+  border-left: 7px solid transparent;
+}
+.textflag .flag .shade {
+  min-height: 30px;
+  padding: 5px 30px 7px 8px;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}
+.textflag .flagshade {
+  line-height: 1px;
+  display: block;
+  float: left;
+  clear: none;
+  height: 7px;
+  margin-left: -1px;
+  width: 100%;
+  background: url("../images/trishade.png") -18px center no-repeat;
+}
+
+
+/* EXIM GOOGLE MAP - EXIM GOOGLE MAP - EXIM GOOGLE MAP */
+/* EXIM GOOGLE MAP - EXIM GOOGLE MAP - EXIM GOOGLE MAP */
+
+/*hompage map*/
+#smlMapWrapper {
+  background:#E9EFF3;
+  color:#fff;
+  color:#004970;
+  font-family: Verdana, 'Trebuchet MS', Arial;
+  font-size: 12px;
+  padding:10px;
+  width:700px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 2px #999999;
+	-moz-box-shadow: 1px 2px 2px #999999;
+	-webkit-box-shadow: 1px 2px 2px #999999;
+	position: relative;
+	behavior: url(/ui/js/libs/PIE.htc);
+ 
+}
+#smlMapWrapper h2,
+#smlMapWrapper h3{
+font-family: Verdana, 'Trebuchet MS', Arial;
+  color:#111;
+}
+#smlMapWrapper h2{
+  font-size:17px;
+  padding-bottom:5px;
+  line-height: 25px;
+  display: block;
+  clear:both;
+}
+
+.smlMapSelect {
+ margin-top:4px; 
+ border: 1px solid #7DA2BA;
+  padding-left: 5px;
+  width: 95.5%;
+}
+
+
+
+
+/* googlemap flag wrapper mmmmmmmmmmmmmm */
+
+
+#googleMapFlagWrapper {
+  margin-left:-10px;
+  margin-right: 10px;
+}
+#googleMapFlagWrapper .flag{
+  margin-top:1px;
+}
+
+#googleMapFlagWrapper .shade{
+  background:#004970 url(http://www.exim.gov/ui/images/trimask.png) no-repeat right center; 
+  font-size:17px; 
+  line-height:30px;
+  width:680px; 
+}
+
+#googleMapFlagWrapper {
+  margin-left:-10px;
+}
+
+
+
+
+/*googlemap wrapper mmmmmmmmmmmmmmmmmmmm */
+
+
+.smlGoogleMapWrapper {
+  display:block;
+  float:left;
+  margin-bottom:5px;
+  width:480px;
+  min-height: 280px;
+  clear:left;
+}
+#smlMapWrapper h3{
+  font-size: 12px;
+  margin-bottom:5px;
+}
+#smlMapWrapper h3 a{
+  font-weight: normal;
+  color:#699BB6;
+  font-size:10px;
+}
+
+
+/*data wrapper mmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+
+.smlMapDataWrapper {
+  display:block;
+  float:left;
+  width:200px;
+  padding-left:20px;
+  color:#000;
+}
+.smlMapDataWrapper ul {
+  list-style:none;
+  margin-left:0;
+  padding-left:0;
+}
+.smlMapDataWrapper ul li{
+  line-height: 1.2;
+  margin-bottom:5px;
+}
+.smlMapNumber {
+  display:inline-block;
+  width:50px;
+  text-align: right;
+  white-space:nowrap;
+}
+.smlInstructions {
+  color:#e9eff3;
+  clear:both;
+  display:block;
+  font-size:9px;
+  line-height: 1;
+}
+.lrgInstructions {
+  display:block;
+  clear:both;
+  color:#000;
+  font-size:9px;
+  padding-top:9px
+}
+
+.smlMapSelect {
+ margin-top:4px; 
+ border: 1px solid #7DA2BA;
+  padding-left: 5px;
+  width: 95.5%;
+}
+
+ /* legend styles */
+#map_canvas { height: 300px; width: 480px; }
+#legend{font: bold 11px/1.1 Arial, Helvetica, sans-serif;padding-left:0px;padding-right:0px;}
+#legend > div {border:1px solid #012;padding:5px 5px 5px 8px; background-color:#ffffff!important;}
+#legend table{font-weight:400;margin-top:2px;}
+#legend table td{margin:5px;}
+#legend tr td:first-child{line-height:10px;width:11px;height:10px;border:1px solid #012;}
+
+/*info tip bubble */
+.info-bubble-wrapper {font-size:9px;padding:0!important;margin:0!important;}
+.info-bubble-title {font: bold 11px/1.1 Arial,Helvetica,sans-serif; margin-bottom:1px}
+.info-bubble-total {font-weight:bold;  margin-top:1px; }
+.ib-dollars,
+.ib-title {display:block; float:left;}
+ .ib-dollars {text-align:right;}
+.ib-title {text-align:left;clear:left;}
+table.infoWin{
+	margin:0px;
+	padding:0px;
+	font-size: 9px; 
+	line-height:10px;
+}
+
